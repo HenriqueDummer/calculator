@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 main{
@@ -13,7 +14,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: rgb(192, 192, 192);
 }
 
 .main_container{
@@ -42,13 +43,28 @@ main{
     font-weight: 600;
 }
 
-.display_content span:nth-child(1){
-    font-size: 25px;
-    padding-bottom: 30px;   
+.operation_container{ 
+    height: 40px; 
 }
 
-.display_content span:nth-child(3){
-    font-size: 40px;   
+.operation_container span {
+    font-size: 23px;
+}
+
+.result_container{
+    font-size: 25px;
+    padding-bottom: 30px;
+    height: 50px;
+      
+}
+
+.result_container span{
+    font-size: 40px;  
+}
+
+.result{
+    height: 40px;
+    
 }
 
 .display_content{
@@ -58,7 +74,8 @@ main{
 .controls{
     background-color: #292d36;
     height: 60%;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .controls_container{
@@ -78,24 +95,57 @@ main{
     font-size: 20px;
     color: aliceblue;
     font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.controls_button i{
+    pointer-events: none;
+}
+
+.controls_button:hover{
+    cursor: pointer;
+    background-color: #202125;
 }
 
 .light_blue{
     color: #26ffd7;
 }
 
-.salmon{
-    color: #e36464;
+.op{
+    background: #8e2de2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .controls_container button:nth-child(1){
     background-color: #272b33;
     grid-column-start: 1;
     grid-column-end: 4;
+    background: #8e2de2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 0.2s ease;
 }
+
 
 .controls_container button:nth-child(15){
     background-color: #272b33;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.controls_container button:nth-child(15):hover{
+    cursor: pointer;
+    background-color: #202125;
+}
+
+footer{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+footer a{
+    color: #4a00e0;
 }

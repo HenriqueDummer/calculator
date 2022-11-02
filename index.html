@@ -13,33 +13,41 @@
         <div class="main_container">
                 <div class="display">
                     <div class="display_content">
-                        <span id="operation_display">23 * 21</span><br>
-                        <span id="result_display">237564654555</span>
+                        <div class="operation_container">
+                            <span id="operation_display"></span>
+                        </div>
+                        <div class="result_container">
+                            <span id="result_display"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="controls">
                     <div class="controls_container">
-                        <button class="controls_button light_blue">AC</button>
-                        <button class="controls_button salmon"><i class="fa-solid fa-divide"></i></button>
-                        <button class="controls_button">9</button>
-                        <button class="controls_button">8</button>
-                        <button class="controls_button">7</button>
-                        <button class="controls_button salmon"><i class="fa-solid fa-xmark"></i></button>
-                        <button class="controls_button">6</button>
-                        <button class="controls_button">5</button>
-                        <button class="controls_button">4</button>
-                        <button class="controls_button salmon"><i class="fa-solid fa-minus"></i></button>
-                        <button class="controls_button">3</button>
-                        <button class="controls_button">2</button>
-                        <button class="controls_button">1</button>
-                        <button class="controls_button salmon"><i class="fa-solid fa-plus"></i></button>
-                        <button class="controls_button">0</button>
-                        <button class="controls_button">.</button>
-                        <button class="controls_button salmon"><i class="fa-solid fa-equals"></i></button>
+                        <button class="controls_button light_blue" id="clear">AC</button>
+                        <button class="controls_button light_blue op" id="divide"><i class="fa-solid fa-divide"></i></button>
+                        <button class="controls_button number">9</button>
+                        <button class="controls_button number">8</button>
+                        <button class="controls_button number">7</button>
+                        <button class="controls_button light_blue op" id="multiply"><i class="fa-solid fa-xmark"></i></button>
+                        <button class="controls_button number">6</button>
+                        <button class="controls_button number">5</button>
+                        <button class="controls_button number">4</button>
+                        <button class="controls_button light_blue op" id="subtr"><i class="fa-solid fa-minus"></i></button>
+                        <button class="controls_button number">3</button>
+                        <button class="controls_button number">2</button>
+                        <button class="controls_button number">1</button>
+                        <button class="controls_button light_blue op" id="sum"><i class="fa-solid fa-plus"></i></button>
+                        <button class="controls_button number">0</button>
+                        <button class="controls_button number">.</button>
+                        <button class="controls_button light_blue op" id="evaluate"><i class="fa-solid fa-equals"></i></button>
                     </div>
                 </div>
         </div>
     </main>
+
+    <footer>
+        <span>Developed by <a href="https://github.com/HenriqueDummer" target="_blank">Henrique Dummer <i class="fa-brands fa-github"></i></a> </span>
+    </footer>
 
     <script src="script.js"></script>
 </body>
